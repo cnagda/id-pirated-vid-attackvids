@@ -24,7 +24,8 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: ls id-pirated-vid-attackvids/attackvids > id-pirated-vid-attackvids/attackvids.txt
+      run: ls id-pirated-vid-attackvids
+    # run: ls id-pirated-vid-attackvids/attackvids > id-pirated-vid-attackvids/attackvids.txt
 
     # Runs a set of commands using the runners shell
     - name: Update list in repo
