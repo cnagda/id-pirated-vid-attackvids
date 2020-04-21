@@ -22,12 +22,11 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: ls > attackvids.txt
-    # run: ls id-pirated-vid-attackvids/attackvids > id-pirated-vid-attackvids/attackvids.txt
+    # Write list of attackvids to file
+    - name: List vids
+      run: ls attackvids > attackvids.txt
 
-    # Runs a set of commands using the runners shell
+    # Push to repo
     - name: Update list in repo
       run: |
         git config --local user.email "cjnagda@ucdavis.edu"
